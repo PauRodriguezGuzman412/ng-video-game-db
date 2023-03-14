@@ -1,0 +1,15 @@
+<div class="search-container dark-mode">
+    <img
+      class="logo"
+      src="../../../assets/images/logo.svg"
+      alt="logo.png"
+    />
+    <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <!-- <span class="logo" routerLink="/">NgVGDb</span> -->
+        <input class="search-input" name="search" ngModel placeholder="Search 500,00+ games">
+        <button class="search-button">Search</button>
+    </form>
+
+    <button class="dark-button" click="Theme()">Change Theme</button>
+    <!-- <button class="dark-button" (myClick)="onClick(click)" clickable>Change Theme</button> -->
+</div>
